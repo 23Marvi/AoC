@@ -28,6 +28,7 @@ import { NgApexchartsModule } from "ng-apexcharts";
 import { ColorPickerModule } from "ngx-color-picker";
 import {NgxPopperModule} from "ngx-popper";
 import { GlobalProvider } from "./utils/globalProvider";
+import { Solver } from './classes/solver';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -111,7 +112,10 @@ export function playerFactory() {
         GlobalProvider,
 
         // Guards
-        ValidJWT
+        ValidJWT,
+
+        // Classes
+        Solver
     ],
     bootstrap: [AppComponent]
 })

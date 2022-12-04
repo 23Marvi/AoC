@@ -1,9 +1,8 @@
-<div class="container">
-    <div class="input"> {{ input }} </div>
-    <div class="solved"> <div *ngFor="let item of solved"> {{ item }} </div> </div>  
-</div>
+<div class="answer">
+    <div *ngIf="answerOne || answerTwo">
+        <div> {{ answerOne }} </div>
+        <div> {{ answerTwo }} </div>
+    </div>
 
-<div class="answer" *ngIf="answerOne || answerTwo" [ngClass]="{'big': !input && solved.length === 0}">
-    <div> {{ answerOne }} </div>
-    <div> {{ answerTwo }} </div>
+    <div *ngIf="!(answerOne || answerTwo)"> No answer yet! </div>
 </div>
