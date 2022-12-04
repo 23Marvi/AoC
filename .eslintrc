@@ -1,0 +1,28 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "no-loops"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "no-console": 0,
+        "no-loops/no-loops": 0,
+        "quotes": "off",
+        "@typescript-eslint/quotes": 1,
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1 // Apparently we need a special identation rule for switch cases...
+            }
+        ],
+        "no-mixed-spaces-and-tabs": "off",
+        "selector-type-no-unknown": "off"
+    }
+}

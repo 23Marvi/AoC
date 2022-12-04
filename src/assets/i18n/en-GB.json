@@ -1,0 +1,20 @@
+{
+	"TOAST": {
+		"ERROR": {
+			"email-already-exists": "",
+			"invalid-password": "",
+			"not-authorized": "",
+			"user-not-found": ""
+		},
+		"INFO": {
+			"new-request": ""
+		},
+		"SUCCESS": {
+			"friendship-accepted": "",
+			"login": "",
+			"register": "",
+			"request-friendship": "",
+			"user-updated": ""
+		}
+	}
+}

@@ -1,0 +1,203 @@
+// Bootstrap
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Toastr
+@import "../node_modules/ngx-toastr/toastr.css";
+
+html,
+body {
+    background-color: whitesmoke;
+    font-family: "Nunito";
+    height: 100%;
+    width: 100%;
+
+    --black: #28283C;
+    --green: #9CC66C;
+    --blue: #1B89C4;
+    --gray: #5D737E;
+    --light-gray: #E5E5E5;
+    --brown: #FAA275;
+    --red: #FF3333;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("./assets/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito-SemiBold";
+    src: url("./assets/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito-Bold";
+    src: url("./assets/fonts/Nunito_Sans/NunitoSans-Bold.ttf");
+}
+
+/* Keyframes */
+@import "/src/keyframes.scss";
+
+.card {
+    padding: 24px 48px 24px 48px;
+}
+
+button, label.btn {
+    width: fit-content;
+    padding: 6px 18px 6px 18px;
+    border-radius: 16px;
+    font-size: 18px;
+
+    &:disabled {
+        opacity: 0.35 !important;
+    }
+
+    &:not(:disabled):hover {
+        cursor: pointer;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &.blue {
+        background-color: #FFFFFF;
+        border: 1px solid var(--blue);
+        color: var(--blue);
+
+        svg-icon {
+            fill: var(--blue);
+        }
+
+        &.solid, &.hover-solid:not(:disabled):hover {
+            background-color: var(--blue);
+            color: #FFFFFF;
+
+            svg-icon {
+                fill: #FFFFFF !important;
+            }
+        }
+    }
+
+    &.red {
+        background-color: #FFFFFF;
+        border: 1px solid var(--red);
+        color: var(--red);;
+
+        svg-icon {
+            fill: var(--red);;
+        }
+
+        &.solid, &.hover-solid:not(:disabled):hover {
+            background-color: var(--red);;
+            color: #FFFFFF;
+
+            svg-icon {
+                fill: #FFFFFF !important;
+            }
+        }
+    }
+
+    &.black {
+        background-color: #FFFFFF;
+        border: 1px solid var(--black);
+        color: var(--black);
+
+        svg-icon {
+            fill: var(--black);
+        }
+
+        &.solid, &.hover-solid:not(:disabled):hover {
+            background-color: var(--black);
+            color: #FFFFFF;
+
+            svg-icon {
+                fill: #FFFFFF !important;
+            }
+        }
+    }
+}
+
+input[type=text], input[type=password] {
+    color: var(--black);
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 8px 18px;
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.link {
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.popper {
+    padding: 6px 12px 6px 12px !important;
+    border-radius: 6px !important;
+    border: 1px solid !important;
+    box-shadow: none !important;
+    color: #FFFFFF;
+    font-size: 16px;
+    z-index: 100;
+
+    &.green {
+        background-color: #9CC66C;
+        border-color: #9CC66C !important;
+
+        .ngxp__arrow {
+            border-bottom-color: #9CC66C !important;
+        }
+    }
+
+    &.red {
+        background-color: #FF3333;
+        border-color: #FF3333 !important;
+
+        .ngxp__arrow {
+            border-bottom-color: #FF3333 !important;
+        }
+    }
+
+    &.blue {
+        background-color: #1B89C4;
+        border-color: #1B89C4 !important;
+
+        .ngxp__arrow {
+            border-bottom-color: #1B89C4 !important;
+        }
+    }
+
+    &.gray {
+        background-color: #8D8CA0;
+        border-color: #8D8CA0 !important;
+
+        .ngxp__arrow {
+            border-bottom-color: #8D8CA0 !important;
+        }
+    }
+
+    &.dark-gray {
+        background-color: #28283C;
+        border-color: #28283C !important;
+
+        .ngxp__arrow {
+            border-bottom-color: #28283C !important;
+        }
+    }
+
+    .ngxp__arrow {
+        left: 0px !important;
+    }
+
+    &.left-48 {
+        left: 48px !important;
+    }
+}

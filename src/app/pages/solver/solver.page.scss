@@ -1,0 +1,35 @@
+:host {
+    height: 100%;
+    margin: 0;
+
+    .container {
+        padding: 50px 0;
+        min-height: 100%;
+        margin-bottom: -50px;
+        text-align: center;
+        display: flex;
+        white-space: pre-line;
+
+        > div {
+            width: 50%;
+        }
+    }
+
+    .answer {
+        background-color: rgba(164, 212, 93, 0.7);
+        font-size: 24px;
+        display: flex;
+        width: 100%;
+        gap: 140px;
+        justify-content: center;
+        position: fixed; 
+        bottom: 0;
+        height: 50px;
+        align-items: center;
+        
+        &.big {
+            font-size: 48px;
+            height: 100%;
+        }
+    }
+}
