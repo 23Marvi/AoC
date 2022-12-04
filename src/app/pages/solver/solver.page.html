@@ -1,8 +1,8 @@
 <div class="answer">
-    <div *ngIf="answerOne || answerTwo">
-        <div> {{ answerOne }} </div>
-        <div> {{ answerTwo }} </div>
+    <div *ngIf="result" >
+        <div> {{ result.one }} </div>
+        <div> {{ result.two }} </div>
     </div>
 
-    <div *ngIf="!(answerOne || answerTwo)"> No answer yet! </div>
+    <div *ngIf="!result"> No answer yet! </div>
 </div>

@@ -10,8 +10,7 @@ const solver = new Solver();
     styleUrls: ["./solver.page.scss"]
 })
 export class SolverPage implements OnInit {
-    answerOne: string;
-    answerTwo: string;
+    result;
 
     constructor(
         private http: HttpClient
@@ -19,7 +18,7 @@ export class SolverPage implements OnInit {
 
     async ngOnInit() {
         this.http.get("assets/input.txt", { responseType: "text" }).subscribe(input => { 
-            const result = solver.s2022_1(input);     
+            this.result = solver.s2021_4(input);     
         });
     }
 }
